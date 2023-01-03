@@ -1,0 +1,317 @@
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Norms Pro', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(to right top, #80c7f3, #8fd9e1, #bce5d3, #e6eeda, #fef9f2);
+}
+
+/*********************** HEADER *****************/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    background-color: rgba(64, 99, 134, 0.70);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #1e3551;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: rgb(196, 233, 221);
+}
+
+/*********************** GERAL *****************/
+
+section{
+    padding: 100px;
+}
+
+body{
+    background-image: linear-gradient(to right top, #80c7f3, #8fd9e1, #bce5d3, #e6eeda, #fef9f2);
+}
+
+/*********************** HOME *****************/
+.home
+{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img{
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.home h1{
+    text-transform: uppercase;
+    color: #243148;
+    font-weight: 400;
+    font-size: 5em;
+    text-align: center;
+    margin: 5px;
+}
+
+.home span{
+    font-weight: 600;
+}
+
+.home h3{
+    color: #243148;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -15px;
+}
+
+@keyframes slide-bottom{0%{transform:translateY(0)}100%{transform:translateY(15px)}}
+
+.btn{
+    animation: slide-bottom 2s ease-in-out infinite alternate 0.5s both;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition-duration: 1s;
+    
+    background-color: #375C80;
+    color: #9FDEE0;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+
+    border: none;
+    border-radius: 40px;
+    padding: 10px 80px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*********************** SOBRE *****************/
+
+.heading h4{ 
+    text-transform: initial;
+    color: #243148;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.heading h2{
+    text-transform: uppercase;
+    color: #243148;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    margin-top: -12px;
+    letter-spacing: -0.02em;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBx{
+    padding: 0 10px;
+}
+
+.contentBx p{
+    color: #243148;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sobre-mim img{
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+/*********************** SKILLS *****************/
+.tecnologias{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.tecnologias .content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.card img{
+    width: 130px;
+}
+
+.card{
+    background: rgba(54,91,127,0.3);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: none;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.card:hover{
+    background: rgba(33, 102, 80, 0.3);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    transition: ease 0.4s;
+}
+
+hr{
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 50px;
+    border: none;
+    height: 2px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, transparent, #243148, transparent);  
+}
+
+/*********************** PROJETOS *****************/
+
+.projetos .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.projetos .content .casos{
+    width: 30%;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+    color: #1a2333;
+}
+
+.projetos .content .casos img{
+    max-width: 100%;
+    border-radius: 10px; /*100%*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.casos img:hover{
+transition: ease 0.5s;
+   transform: scale(1.01);
+}
+
+/*********************** CONTATO *****************/
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais ul{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.redes-sociais ul li{
+    position: relative;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+
+.redes-sociais ul li a{
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    color: #243148;
+    text-decoration: none;
+    text-align: center;
+}
+
+.redes-sociais ul li a:hover{
+    top:-2px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+.contato p{
+    color: #243148;
+    font-family: 'TT Norms Pro';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+/*********FOOTER**************/
+footer{
+    background-color: rgba(64, 99, 134, 0.70);
+    color: #152333;
+    text-align: center;
+    padding: 20px;
+}
+
