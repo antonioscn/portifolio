@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +25,18 @@ header{
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: rgba(49, 74, 99, 0.7);
+    margin: 8px;
+    transition: 0.3s;
 }
 
 header ul{
@@ -113,7 +124,7 @@ body{
     transition-duration: 1s;
     
     background-color: #375C80;
-    color: #9FDEE0;
+    color: #bce5d3;
     font-family: 'TT Norms Pro';
     font-weight: 400;
     font-size: 18px;
@@ -193,6 +204,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    flex-wrap: wrap ;
 }
 
 .card img{
@@ -231,13 +243,17 @@ hr{
 }
 
 /*********************** PROJETOS *****************/
-
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .projetos .content{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 }
 
 .projetos .content .casos{
@@ -262,7 +278,7 @@ transition: ease 0.5s;
 .contato{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -315,3 +331,259 @@ footer{
     padding: 20px;
 }
 
+/********* RESPONSIVIDADE **************/
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*********************** HEADER *****************/
+    .menu{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50vw;
+        height: 80vh;
+        background: rgba(44, 78, 112, 0.788);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in-out ;
+    }
+
+    .menu a{
+        color: #bce5d3;
+    }
+
+    .menu li{
+        opacity: 0;
+    }
+
+    header{
+        padding: 25px ;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .menu.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /*********************** HOME *****************/
+    .home img{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    .home h1{
+        font-size: 3.5em;
+    }
+
+    .home h3{
+        font-size: 1.5em;
+    }
+
+    /*********************** SOBRE *****************/
+    .heading{
+        width: 100%;
+    }
+
+    .heading h4{ 
+        font-size: 2em;
+    }
+
+    .heading h2{
+        font-size: 3em;
+    }
+
+    .sobre-mim{
+        padding: 0 25px;
+    }
+
+    .content{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .contentBx{
+        padding: 0 1px;
+    }
+
+    .contentBx p{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .sobre-mim img{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    /*********************** SKILLS *****************/
+    .tecnologias{
+        padding: 70px 20px;
+        margin-top: -70px;
+    }
+
+    .tecnologias .content{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .card img{
+        width: 150px;
+    }
+
+    hr{
+        margin-top: 70px;
+        width: 100%; 
+    }
+
+    /*********************** PROJETOS *****************/
+
+    .projetos .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos .content .casos{
+        width: 100%;
+        padding: 5px 5px 25px 5px;
+        text-align: center;
+        color: #1a2333;
+        font-size: 1.3em;
+    }
+
+    .projetos .content .casos img{
+        max-width: 100%;
+        border-radius: 10px; /*100%*/
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
+    /*********************** CONTATO *****************/
+    .contato{
+        height: 50%;
+        margin-top: -100px;
+    }
+}
+
+/* **************************************************************** */
+@media screen and (max-width: 600px){
+    .home img{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    .home{
+        padding: 0;
+    }
+
+    .home h1{
+        font-size: 2em;
+        padding: 0;
+    }
+
+    .home h3{
+        font-size: 1em;
+    }
+
+    .btn{
+        font-size: 1em;
+        border-radius: 40px;
+        padding: 10px 50px;
+
+    }
+
+    /*********************** SOBRE *****************/
+    .sobre-mim{
+        padding: 25px 25px;
+    }
+
+    .contentBx p{
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    /*********************** SKILLS *****************/
+    .tecnologias{
+        padding: 70px 20px;
+        margin-top: -70px;
+    }
+
+    .tecnologias .content{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .card img{
+        width: 100px;
+    }
+
+    hr{
+        margin-top: 70px;
+        width: 100%; 
+    }
+
+    /*********************** PROJETOS *****************/
+
+    .projetos{
+        padding: 10px;
+        margin-bottom: 90px;
+        /* border-bottom: 0.1px solid; */
+    }
+ 
+    .projetos .content .casos{
+        width: 100%;
+        padding: 5px 5px 25px 5px;
+        text-align: center;
+        color: #1a2333;
+        font-size: 1.3em;
+    }
+
+    .projetos .content .casos img{
+        max-width: 100%;
+        border-radius: 10px; /*100%*/
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
+    /*********************** CONTATO *****************/
+    .contato{
+        margin-top: 10px;
+        padding: 10px;
+        height: 50%;
+        margin-top: -100px;
+    }
+}
