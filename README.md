@@ -4,7 +4,7 @@
 Repositório criado para compartilhar a criação do meu portfólio. [em atualização]
 
 ## ℹ️ Informações
-O seguinte projeto é um repositório criado com o intuito de organizar e armazenar minhas informações e projetos desenvolvidos, mostrando meus avanços e toda minha trajetória no universo Dev .
+O seguinte projeto foi criado com o intuito de organizar e armazenar minhas informações e projetos desenvolvidos, mostrando meus avanços e toda minha trajetória no universo Dev .
  
 ## 💻 Tecnologias Usadas
 
