@@ -20,5 +20,5 @@ Esse projeto foi desenvolvido com as tecnologias:
  
  
 ##  Deploy
-Veja o deploy do projeto [Portfólio - Antonio Neto](https://geradorqr-ascn.vercel.app/).
+Veja o deploy do projeto [Portfólio - Antonio Neto](https://antonioscn.vercel.app/).
 
