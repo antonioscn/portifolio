@@ -8,7 +8,7 @@ O presente projeto foi criado com o intuito de organizar e armazenar minhas info
  
 ## 💻 Tecnologias Usadas
 
-Esse projeto foi desenvolvido com as tecnologias:
+Esse projeto foi desenvolvido com:
 
 - HTML
 - CSS
