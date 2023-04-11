@@ -1,7 +1,7 @@
 ## <p align="center">Portfólio - Antonio Neto</p>
 
 <p align="center">
-Portfolio de Projetos [em atualização]
+Portfolio de Projetos
 
 ## ℹ️ Informações
 O presente projeto foi criado com o intuito de organizar e armazenar minhas informações e projetos desenvolvidos, mostrando meus avanços e minha trajetória no universo Dev .
